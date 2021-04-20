@@ -9,7 +9,7 @@ export function Header() {
         align="center"
         justify="center"
         h="80px"
-        maxW="1240"
+        maxW="1160"
         mx="auto"
       >
         <Image src="images/Logo.svg" alt="Worldtrip logo"></Image>
