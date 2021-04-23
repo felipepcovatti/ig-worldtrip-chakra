@@ -1,7 +1,10 @@
+import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { HomeBanner } from '../components/HomeBanner'
 import { IconsSection } from '../components/IconsSection'
+import { theme } from '../styles/theme'
+import { HomeSwiper } from '../components/HomeSwiper'
 
 const icons = [
   'cocktail',
@@ -11,9 +14,24 @@ const icons = [
   'earth'
 ]
 
+const slides = [
+  {
+    id: 1,
+    image: 'budapest.jpg'
+  },
+  {
+    id: 2,
+    image: 'rio.jpg'
+  },
+  {
+    id: 3,
+    image: 'new-york.jpg'
+  }
+]
+
 export default function Home() {
   return (
-    <>
+    <Box mb="75px">
       <Head>
         <title>Wordtrip | Home</title>
       </Head>
@@ -23,6 +41,15 @@ export default function Home() {
       <HomeBanner />
 
       <IconsSection icons={icons} />
-    </>
+
+      <hr style={{
+        width: 100,
+        margin: "75px auto",
+        borderWidth: 1,
+        borderColor: theme.colors.gray[600]
+      }} />
+
+      <HomeSwiper slides={slides} />
+    </Box>
   )
 }
