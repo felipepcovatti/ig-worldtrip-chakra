@@ -8,7 +8,7 @@ export function Header() {
         as="header"
         align="center"
         justify="center"
-        h="80px"
+        h="96px"
         maxW="1160"
         mx="auto"
       >
