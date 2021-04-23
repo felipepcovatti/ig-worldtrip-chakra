@@ -15,8 +15,8 @@ export function IconsSection({ icons }: IconsSectionProps) {
         justify="space-around"
       >
         {icons.map(icon => (
-          <Box key={icon} w="100">
-            <Image src={`/images/icons/${icon}.svg`} />
+          <Box key={icon}>
+            <Image src={`/images/icons/${icon}.svg`} mx="auto" />
             <Text
               textAlign="center"
               fontWeight="medium"
