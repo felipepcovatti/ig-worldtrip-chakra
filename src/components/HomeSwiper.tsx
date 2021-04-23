@@ -1,16 +1,6 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import Link from 'next/link'
 
-type Slide = {
-  id: number;
-  image: string
-}
-
-interface HomeSwiperProps {
-  slides: Slide[]
-}
-
-
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { theme } from "../styles/theme";
@@ -19,7 +9,18 @@ import faker from 'faker'
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
 
-export function HomeSwiper({ slides }: HomeSwiperProps) {
+type Category = {
+  id: number;
+  image: string;
+  name: string;
+}
+
+interface HomeSwiperProps {
+  categories: Category[]
+}
+
+export function HomeSwiper({ categories }: HomeSwiperProps) {
+
   return (
     <Box px="3">
       <Box
@@ -31,38 +32,39 @@ export function HomeSwiper({ slides }: HomeSwiperProps) {
           navigation
           pagination={{ clickable: true }}
         >
-          {slides.map(slide => (
-            <SwiperSlide key={slide.id} style={{ height: 450 }}>
+          {categories.map(category => (
+            <SwiperSlide key={category.id} style={{ height: 450 }}>
               <Image
-                src={`/images/slides/${slide.image}`}
+                src={`/images/categories/${category.image}`}
                 style={{
                   filter: "brightness(0.4)"
                 }}
               />
-              <Box
+              <Flex
                 pos="absolute"
-                w="100%"
                 textAlign="center"
+                width="100%"
+                justify="center"
                 color={theme.colors.white}
                 fontSize="xx-large"
                 fontWeight="bold"
               >
                 <Link href="/">
                   <a>
-                  <Text
-                    fontSize="xx-large"
-                    textTransform="capitalize"
-                  >
-                    {faker.lorem.words(2)}
-                  </Text>
-                  <Text
-                    fontSize="large"
-                  >
-                    {faker.lorem.sentence(3)}
-                  </Text>
+                    <Text
+                      fontSize="xx-large"
+                      textTransform="capitalize"
+                    >
+                      {category.name}
+                    </Text>
+                    <Text
+                      fontSize="large"
+                    >
+                      {faker.lorem.sentence(3)}
+                    </Text>
                   </a>
                 </Link>
-              </Box>
+              </Flex>
             </SwiperSlide>
           ))}
         </Swiper>

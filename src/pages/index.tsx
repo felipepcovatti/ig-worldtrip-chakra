@@ -6,24 +6,20 @@ import { IconsSection } from '../components/IconsSection'
 import { theme } from '../styles/theme'
 import faker from 'faker'
 import { HomeSwiper } from '../components/HomeSwiper'
+import { GetServerSideProps } from 'next'
+import { api } from '../services/api'
 
+type Category = {
+  id: number;
+  name: string;
+  image: string;
+}
+interface HomeProps {
+  categories: Category[]
+}
 
-const slides = [
-  {
-    id: 1,
-    image: 'budapest.jpg'
-  },
-  {
-    id: 2,
-    image: 'rio.jpg'
-  },
-  {
-    id: 3,
-    image: 'new-york.jpg'
-  }
-]
+export default function Home({ categories }: HomeProps) {
 
-export default function Home() {
   return (
     <Box mb="75px">
       <Head>
@@ -52,7 +48,17 @@ export default function Home() {
         {faker.lorem.sentence(5)}
       </Text>
 
-      <HomeSwiper slides={slides} />
+      <HomeSwiper categories={categories} />
     </Box>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const { data: categories } = await api.get('categories')
+
+  return {
+    props: {
+      categories
+    }
+  }
 }
