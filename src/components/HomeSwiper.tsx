@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Link from 'next/link'
 
 type Slide = {
   id: number;
@@ -46,7 +47,8 @@ export function HomeSwiper({ slides }: HomeSwiperProps) {
                 fontSize="xx-large"
                 fontWeight="bold"
               >
-                <Link>
+                <Link href="/">
+                  <a>
                   <Text
                     fontSize="xx-large"
                     textTransform="capitalize"
@@ -58,6 +60,7 @@ export function HomeSwiper({ slides }: HomeSwiperProps) {
                   >
                     {faker.lorem.sentence(3)}
                   </Text>
+                  </a>
                 </Link>
               </Box>
             </SwiperSlide>
