@@ -7,13 +7,6 @@ import { theme } from '../styles/theme'
 import faker from 'faker'
 import { HomeSwiper } from '../components/HomeSwiper'
 
-const icons = [
-  'cocktail',
-  'surf',
-  'building',
-  'museum',
-  'earth'
-]
 
 const slides = [
   {
@@ -41,7 +34,7 @@ export default function Home() {
 
       <HomeBanner />
 
-      <IconsSection icons={icons} />
+      <IconsSection />
 
       <hr style={{
         width: 100,
