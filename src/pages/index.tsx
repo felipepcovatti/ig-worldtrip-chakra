@@ -6,7 +6,7 @@ import { IconsSection } from '../components/IconsSection'
 import { theme } from '../styles/theme'
 import faker from 'faker'
 import { HomeSwiper } from '../components/HomeSwiper'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import { api } from '../services/api'
 
 type Category = {
@@ -53,12 +53,13 @@ export default function Home({ categories }: HomeProps) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const { data: categories } = await api.get('categories')
 
   return {
     props: {
       categories
-    }
+    },
+    revalidate: 60
   }
 }
