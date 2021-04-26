@@ -9,7 +9,7 @@ type Icon = {
 
 const icons: Icon[] = Array.from(Array(5).keys(), key => {
   const name = faker.lorem.word()
-  const image = `icon-${key + 1}.svg`
+  const image = `images/icons/icon-${key + 1}.svg`
   const id = key + 1;
 
   return {
@@ -31,7 +31,7 @@ export function IconsSection() {
       >
         {icons.map(icon => (
           <Box key={icon.name}>
-            <Image src={`/images/icons/${icon.image}`} mx="auto" />
+            <Image src={icon.image} mx="auto" />
             <Text
               textAlign="center"
               fontWeight="medium"
