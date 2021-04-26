@@ -1,0 +1,19 @@
+{
+  "continents": [
+    {
+      "id": "europe",
+      "name": "Europe",
+      "image": "images/continents/europe.jpg"
+    },
+    {
+      "id": "north-america",
+      "name": "North America",
+      "image": "images/continents/north-america.jpg"
+    },
+    {
+      "id": "south-america",
+      "name": "South America",
+      "image": "images/continents/south-america.jpg"
+    }
+  ]
+}

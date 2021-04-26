@@ -9,16 +9,16 @@ import { HomeSwiper } from '../components/HomeSwiper'
 import { GetStaticProps } from 'next'
 import { api } from '../services/api'
 
-type Category = {
+type Continent = {
   id: number;
   name: string;
   image: string;
 }
 interface HomeProps {
-  categories: Category[]
+  continents: Continent[]
 }
 
-export default function Home({ categories }: HomeProps) {
+export default function Home({ continents }: HomeProps) {
 
   return (
     <Box mb="75px">
@@ -48,17 +48,17 @@ export default function Home({ categories }: HomeProps) {
         {faker.lorem.sentence(5)}
       </Text>
 
-      <HomeSwiper categories={categories} />
+      <HomeSwiper slides={continents} />
     </Box>
   )
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data: categories } = await api.get('categories')
+  const { data: continents } = await api.get('continents')
 
   return {
     props: {
-      categories
+      continents
     },
     revalidate: 60
   }

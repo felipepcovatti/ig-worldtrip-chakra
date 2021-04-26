@@ -9,18 +9,17 @@ import faker from 'faker'
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
 
-type Category = {
+type Continent = {
   id: number;
   image: string;
   name: string;
 }
 
 interface HomeSwiperProps {
-  categories: Category[]
+  slides: Continent[]
 }
 
-export function HomeSwiper({ categories }: HomeSwiperProps) {
-
+export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
   return (
     <Box px="3">
       <Box
@@ -32,10 +31,10 @@ export function HomeSwiper({ categories }: HomeSwiperProps) {
           navigation
           pagination={{ clickable: true }}
         >
-          {categories.map(category => (
-            <SwiperSlide key={category.id} style={{ height: 450 }}>
+          {continents.map(continent => (
+            <SwiperSlide key={continent.id} style={{ height: 450 }}>
               <Image
-                src={`/images/categories/${category.image}`}
+                src={continent.image}
                 style={{
                   filter: "brightness(0.4)"
                 }}
@@ -49,13 +48,13 @@ export function HomeSwiper({ categories }: HomeSwiperProps) {
                 fontSize="xx-large"
                 fontWeight="bold"
               >
-                <Link href="/">
+                <Link href={`/${continent.id}`}>
                   <a>
                     <Text
                       fontSize="xx-large"
                       textTransform="capitalize"
                     >
-                      {category.name}
+                      {continent.name}
                     </Text>
                     <Text
                       fontSize="large"
