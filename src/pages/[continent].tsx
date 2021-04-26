@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, Icon, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Icon, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
@@ -6,8 +6,7 @@ import { api } from "../services/api";
 import { theme } from "../styles/theme";
 import Flags from 'country-flag-icons/react/1x1'
 import faker from 'faker'
-
-
+import { InfoOutlineIcon } from "@chakra-ui/icons";
 
 type Continent = {
   id: number;
@@ -71,23 +70,60 @@ export default function Continent({ continent, cities }: ContinentProps) {
             justify="space-around"
             textAlign="center"
           >
-            {Array.from(Array(3).keys(), key => (
-              <Box key={key}>
-                <Text
-                  fontSize="5xl"
-                  fontWeight="semibold"
-                  color={theme.colors.yellow}
-                >
-                  {faker.datatype.number(99)}
-                </Text>
-                <Text
-                  fontWeight="semibold"
-                  color={theme.colors.gray[600]}
-                >
-                  {faker.lorem.word(5)}
-                </Text>
-              </Box>
-            ))}
+            <Box>
+              <Text
+                fontSize="5xl"
+                fontWeight="semibold"
+                color={theme.colors.yellow}
+              >
+                {faker.datatype.number(99)}
+              </Text>
+              <Text
+                as="span"
+                fontSize="larger"
+                fontWeight="semibold"
+                color={theme.colors.gray[600]}
+              >
+                {faker.lorem.word(5)}
+              </Text>
+            </Box>
+            <Box>
+              <Text
+                fontSize="5xl"
+                fontWeight="semibold"
+                color={theme.colors.yellow}
+              >
+                {faker.datatype.number(99)}
+              </Text>
+              <Text
+                as="span"
+                fontSize="larger"
+                fontWeight="semibold"
+                color={theme.colors.gray[600]}
+              >
+                {faker.lorem.word(5)}
+              </Text>
+            </Box>
+            <Box>
+              <Text
+                fontSize="5xl"
+                fontWeight="semibold"
+                color={theme.colors.yellow}
+              >
+                {faker.datatype.number(99)}
+              </Text>
+              <Text
+                as="span"
+                fontSize="larger"
+                fontWeight="semibold"
+                color={theme.colors.gray[600]}
+              >
+                {faker.lorem.word(5)}
+              </Text>
+              <Tooltip label={faker.lorem.sentence(5)}>
+                <InfoOutlineIcon ml="6px" mb="2px" color={theme.colors.gray[500]} />
+              </Tooltip>
+            </Box>
           </Flex>
         </SimpleGrid>
         <Heading as="h3" fontSize="3xl" fontWeight="semibold">
