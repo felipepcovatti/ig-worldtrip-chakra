@@ -10,7 +10,7 @@ import { GetStaticProps } from 'next'
 import { api } from '../services/api'
 
 type Continent = {
-  id: number;
+  id: string;
   name: string;
   image: string;
 }

@@ -10,7 +10,7 @@ import faker from 'faker'
 SwiperCore.use([Navigation, Pagination, A11y]);
 
 type Continent = {
-  id: number;
+  id: string;
   image: string;
   name: string;
 }
