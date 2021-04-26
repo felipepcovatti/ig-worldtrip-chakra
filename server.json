@@ -15,5 +15,112 @@
       "name": "South America",
       "image": "images/continents/south-america.jpg"
     }
+  ],
+  "cities": [
+    {
+      "name": "Budapest",
+      "country": "Hungary",
+      "country_code": "HU",
+      "image": "images/cities/budapest.jpg",
+      "continent_id": "europe"
+    },
+    {
+      "name": "London",
+      "country": "United Kingdon",
+      "country_code": "GB",
+      "image": "images/cities/london.jpg",
+      "continent_id": "europe"
+    },
+    {
+      "name": "Rome",
+      "country": "Italy",
+      "country_code": "IT",
+      "image": "images/cities/rome.jpg",
+      "continent_id": "europe"
+    },
+    {
+      "name": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "image": "images/cities/barcelona.jpg",
+      "continent_id": "europe"
+    },
+    {
+      "name": "Kraków",
+      "country": "Poland",
+      "country_code": "PL",
+      "image": "images/cities/krakow.jpg",
+      "continent_id": "europe"
+    },
+    {
+      "name": "Miami",
+      "country": "United States",
+      "country_code": "US",
+      "image": "images/cities/miami.jpg",
+      "continent_id": "north-america"
+    },
+    {
+      "name": "Los Angeles",
+      "country": "United States",
+      "country_code": "US",
+      "image": "images/cities/los-angeles.jpg",
+      "continent_id": "north-america"
+    },
+    {
+      "name": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "image": "images/cities/new-york.jpg",
+      "continent_id": "north-america"
+    },
+    {
+      "name": "Las Vegas",
+      "country": "United States",
+      "country_code": "US",
+      "image": "images/cities/las-vegas.jpg",
+      "continent_id": "north-america"
+    },
+    {
+      "name": "Cancún",
+      "country": "Mexico",
+      "country_code": "MX",
+      "image": "images/cities/cancun.jpg",
+      "continent_id": "north-america"
+    },
+    {
+      "name": "Rio de Janeiro",
+      "country": "Brazil",
+      "country_code": "BR",
+      "image": "images/cities/rio-de-janeiro.jpg",
+      "continent_id": "south-america"
+    },
+    {
+      "name": "São Paulo",
+      "country": "Brazil",
+      "country_code": "BR",
+      "image": "images/cities/sao-paulo.jpg",
+      "continent_id": "south-america"
+    },
+    {
+      "name": "Cusco",
+      "country": "Peru",
+      "country_code": "PE",
+      "image": "images/cities/cusco.jpg",
+      "continent_id": "south-america"
+    },
+    {
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "country_code": "AR",
+      "image": "images/cities/buenos-aires.jpg",
+      "continent_id": "south-america"
+    },
+    {
+      "name": "Quito",
+      "country": "Ecuador",
+      "country_code": "EC",
+      "image": "images/cities/quito.jpg",
+      "continent_id": "south-america"
+    }
   ]
 }

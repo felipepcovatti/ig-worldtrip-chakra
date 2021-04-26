@@ -4,6 +4,9 @@ export const theme = extendTheme({
   fonts: {
     body: 'Poppins',
   },
+  colors: {
+    yellow: '#FFBA08'
+  },
   styles: {
     global: {
       body: {
