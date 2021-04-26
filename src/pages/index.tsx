@@ -38,7 +38,7 @@ export default function Home({ continents }: HomeProps) {
         width: 100,
         margin: "75px auto",
         borderWidth: 1,
-        borderColor: theme.colors.gray[600]
+        borderColor: theme.colors.grey[700]
       }} />
 
       <Text

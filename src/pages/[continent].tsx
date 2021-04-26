@@ -58,7 +58,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
       >
         <Heading
           fontSize="xx-large"
-          color={theme.colors.white}
+          color={theme.colors.grey[100]}
           transform="translateY(-150px)"
           position="absolute"
         >
@@ -84,7 +84,6 @@ export default function Continent({ continent, cities }: ContinentProps) {
                 as="span"
                 fontSize="larger"
                 fontWeight="semibold"
-                color={theme.colors.gray[600]}
               >
                 {faker.lorem.word(5)}
               </Text>
@@ -101,7 +100,6 @@ export default function Continent({ continent, cities }: ContinentProps) {
                 as="span"
                 fontSize="larger"
                 fontWeight="semibold"
-                color={theme.colors.gray[600]}
               >
                 {faker.lorem.word(5)}
               </Text>
@@ -118,12 +116,15 @@ export default function Continent({ continent, cities }: ContinentProps) {
                 as="span"
                 fontSize="larger"
                 fontWeight="semibold"
-                color={theme.colors.gray[600]}
               >
                 {faker.lorem.word(5)}
               </Text>
               <Tooltip label={faker.lorem.sentence(5)}>
-                <InfoOutlineIcon ml="6px" mb="2px" color={theme.colors.gray[500]} />
+                <InfoOutlineIcon
+                  ml="6px"
+                  mb="2px"
+                  color={theme.colors.grey[500]}
+                />
               </Tooltip>
             </Box>
           </Flex>
@@ -147,7 +148,10 @@ export default function Continent({ continent, cities }: ContinentProps) {
                   <Text textTransform="capitalize" fontWeight="semibold" fontSize="lg" mb={2}>
                     {city.name}
                   </Text>
-                  <Text textTransform="capitalize">
+                  <Text
+                    textTransform="capitalize"
+                    color={theme.colors.grey[500]}
+                  >
                     {city.country}
                   </Text>
                 </Box>

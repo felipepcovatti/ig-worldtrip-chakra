@@ -47,7 +47,6 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                 textAlign="center"
                 width="100%"
                 justify="center"
-                color={theme.colors.white}
                 fontSize="xx-large"
                 fontWeight="bold"
               >
@@ -56,11 +55,13 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                     <Text
                       fontSize="xx-large"
                       textTransform="capitalize"
+                      color={theme.colors.grey[100]}
                     >
                       {continent.name}
                     </Text>
                     <Text
                       fontSize="large"
+                      color={theme.colors.grey[300]}
                     >
                       {faker.lorem.sentence(3)}
                     </Text>

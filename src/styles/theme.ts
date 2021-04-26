@@ -5,14 +5,22 @@ export const theme = extendTheme({
     body: 'Poppins',
   },
   colors: {
-    yellow: '#FFBA08'
+    yellow: '#FFBA08',
+    grey: {
+      100: '#F5F8FA',
+      300: '#DADADA',
+      500: '#999999',
+      700: '#47585B',
+    },
+    black: '#000000',
+    white: '#FFFFFF'
   },
   styles: {
     global: {
       body: {
-        color: 'gray.600',
-        backgroundColor: '#F5F8FA'
-      }
+        color: 'grey.700',
+        backgroundColor: 'grey.100'
+      },
     }
   }
 })
