@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, Icon, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
