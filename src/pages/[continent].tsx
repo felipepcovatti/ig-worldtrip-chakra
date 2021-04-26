@@ -145,12 +145,19 @@ export default function Continent({ continent, cities }: ContinentProps) {
               </Flex>
               <Flex p={5} justify="space-between" align="center">
                 <Box>
-                  <Text textTransform="capitalize" fontWeight="semibold" fontSize="lg" mb={2}>
+                  <Text
+                    textTransform="capitalize"
+                    fontWeight="semibold"
+                    fontSize="lg"
+                    mb={2}
+                    fontFamily={theme.fonts.alternative}
+                  >
                     {city.name}
                   </Text>
                   <Text
                     textTransform="capitalize"
                     color={theme.colors.grey[500]}
+                    fontFamily={theme.fonts.alternative}
                   >
                     {city.country}
                   </Text>
