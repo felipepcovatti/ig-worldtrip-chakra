@@ -20,6 +20,9 @@ interface HomeSwiperProps {
 }
 
 export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
+
+  faker.seed(40)
+
   return (
     <Box px="3">
       <Box

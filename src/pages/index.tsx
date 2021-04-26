@@ -20,6 +20,8 @@ interface HomeProps {
 
 export default function Home({ continents }: HomeProps) {
 
+  faker.seed(8)
+
   return (
     <Box mb="75px">
       <Head>

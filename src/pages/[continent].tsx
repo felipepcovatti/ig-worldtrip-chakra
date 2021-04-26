@@ -29,6 +29,8 @@ interface ContinentProps {
 
 export default function Continent({ continent, cities }: ContinentProps) {
 
+  faker.seed(16)
+
   return (
     <Box mb="75px">
       <Head>

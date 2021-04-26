@@ -3,6 +3,9 @@ import { theme } from "../styles/theme";
 import faker from 'faker'
 
 export function HomeBanner() {
+
+  faker.seed(24)
+
   return (
     <Box
       bgImg="url(/images/home-banner.jpeg)"

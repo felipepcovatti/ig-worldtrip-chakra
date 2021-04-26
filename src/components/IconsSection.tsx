@@ -1,25 +1,9 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import faker from 'faker'
 
-type Icon = {
-  id: number;
-  name: string;
-  image: string;
-}
-
-const icons: Icon[] = Array.from(Array(5).keys(), key => {
-  const name = faker.lorem.word()
-  const image = `images/icons/icon-${key + 1}.svg`
-  const id = key + 1;
-
-  return {
-    id,
-    name,
-    image
-  }
-})
-
 export function IconsSection() {
+
+  faker.seed(32)
 
   return (
     <Box px="3">
@@ -29,16 +13,16 @@ export function IconsSection() {
         mt={20}
         justify="space-around"
       >
-        {icons.map(icon => (
-          <Box key={icon.name}>
-            <Image src={icon.image} mx="auto" />
+        {Array.from(Array(5).keys(), key => (
+          <Box key={key + 1}>
+            <Image src={`images/icons/icon-${key + 1}.svg`} mx="auto" />
             <Text
               textAlign="center"
               fontWeight="medium"
               mt="3"
               fontSize="lg"
             >
-              {icon.name}
+              {faker.lorem.word()}
             </Text>
           </Box>
         ))}
