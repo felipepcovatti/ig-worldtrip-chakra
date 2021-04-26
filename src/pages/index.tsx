@@ -46,8 +46,8 @@ export default function Home({ continents }: HomeProps) {
         fontSize="xx-large"
         mb="75px"
       >
-        {faker.lorem.sentence(2)} <br />
-        {faker.lorem.sentence(5)}
+        {faker.lorem.sentence(2).replace('.', '?')} <br />
+        {faker.lorem.sentence(5).replace('.', '')}
       </Text>
 
       <HomeSwiper slides={continents} />
