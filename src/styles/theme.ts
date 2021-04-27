@@ -21,8 +21,16 @@ export const theme = extendTheme({
     global: {
       body: {
         color: 'grey.700',
-        backgroundColor: 'grey.100'
+        backgroundColor: 'grey.100',
+        fontWeight: 'normal'
       },
+    }
+  },
+  components: {
+    Heading: {
+      baseStyle: {
+        fontWeight: 'semibold'
+      }
     }
   }
 })

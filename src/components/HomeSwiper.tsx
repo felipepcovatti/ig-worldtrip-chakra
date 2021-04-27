@@ -47,20 +47,20 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                 textAlign="center"
                 width="100%"
                 justify="center"
-                fontSize="xx-large"
-                fontWeight="bold"
               >
                 <Link href={`/${continent.id}`}>
                   <a>
                     <Text
-                      fontSize="xx-large"
+                      fontSize="5xl"
+                      fontWeight="bold"
                       textTransform="capitalize"
                       color={theme.colors.grey[100]}
                     >
                       {continent.name}
                     </Text>
                     <Text
-                      fontSize="large"
+                      fontSize="x-large"
+                      fontWeight="bold"
                       color={theme.colors.grey[300]}
                     >
                       {faker.lorem.sentence(3)}

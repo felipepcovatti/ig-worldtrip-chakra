@@ -18,9 +18,9 @@ export function IconsSection() {
             <Image src={`images/icons/icon-${key + 1}.svg`} mx="auto" />
             <Text
               textAlign="center"
-              fontWeight="medium"
+              fontWeight="semibold"
               mt="3"
-              fontSize="lg"
+              fontSize="x-large"
             >
               {faker.lorem.word()}
             </Text>

@@ -43,7 +43,8 @@ export default function Home({ continents }: HomeProps) {
 
       <Text
         textAlign="center"
-        fontSize="xx-large"
+        fontSize="4xl"
+        fontWeight="medium"
         mb="75px"
       >
         {faker.lorem.sentence(2).replace('.', '?')} <br />

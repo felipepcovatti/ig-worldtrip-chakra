@@ -57,7 +57,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
         pt="75px"
       >
         <Heading
-          fontSize="xx-large"
+          fontSize="5xl"
           color={theme.colors.grey[100]}
           transform="translateY(-150px)"
           position="absolute"
@@ -65,7 +65,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
           {continent.name}
         </Heading>
         <SimpleGrid spacing="50px" columns={2} mb="75px">
-          <Text>
+          <Text fontSize="x-large">
             {faker.lorem.lines(11)}
           </Text>
           <Flex
@@ -82,7 +82,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
               </Text>
               <Text
                 as="span"
-                fontSize="larger"
+                fontSize="x-large"
                 fontWeight="semibold"
               >
                 {faker.lorem.word(5)}
@@ -98,7 +98,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
               </Text>
               <Text
                 as="span"
-                fontSize="larger"
+                fontSize="x-large"
                 fontWeight="semibold"
               >
                 {faker.lorem.word(5)}
@@ -114,7 +114,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
               </Text>
               <Text
                 as="span"
-                fontSize="larger"
+                fontSize="x-large"
                 fontWeight="semibold"
               >
                 {faker.lorem.word(5)}
@@ -129,7 +129,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
             </Box>
           </Flex>
         </SimpleGrid>
-        <Heading as="h3" fontSize="3xl" fontWeight="semibold">
+        <Heading as="h3" fontSize="4xl" fontWeight="medium">
           Popular destinations
         </Heading>
         <SimpleGrid spacing="50px" columns={4} mt="45px">
@@ -148,7 +148,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
                   <Text
                     textTransform="capitalize"
                     fontWeight="semibold"
-                    fontSize="lg"
+                    fontSize="xl"
                     mb={2}
                     fontFamily={theme.fonts.alternative}
                   >
@@ -158,6 +158,8 @@ export default function Continent({ continent, cities }: ContinentProps) {
                     textTransform="capitalize"
                     color={theme.colors.grey[500]}
                     fontFamily={theme.fonts.alternative}
+                    fontWeight="medium"
+                    fontSize="md"
                   >
                     {city.country}
                   </Text>
