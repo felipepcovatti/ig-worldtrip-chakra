@@ -66,7 +66,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
         </Heading>
         <SimpleGrid spacing="24px" columns={2} mb="75px">
           <Text fontSize="x-large">
-            {faker.lorem.lines(11)}
+            {faker.lorem.lines(8)}
           </Text>
           <Flex
             justify="space-around"
