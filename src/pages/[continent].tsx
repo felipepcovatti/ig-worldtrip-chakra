@@ -59,17 +59,18 @@ export default function Continent({ continent, cities }: ContinentProps) {
         <Heading
           fontSize="5xl"
           color={theme.colors.grey[100]}
-          transform="translateY(-150px)"
+          transform="translateY(-180px)"
           position="absolute"
         >
           {continent.name}
         </Heading>
-        <SimpleGrid spacing="50px" columns={2} mb="75px">
+        <SimpleGrid spacing="24px" columns={2} mb="75px">
           <Text fontSize="x-large">
             {faker.lorem.lines(11)}
           </Text>
           <Flex
             justify="space-around"
+            align="center"
             textAlign="center"
           >
             <Box>
@@ -121,8 +122,8 @@ export default function Continent({ continent, cities }: ContinentProps) {
               </Text>
               <Tooltip label={faker.lorem.sentence(5)}>
                 <InfoOutlineIcon
-                  ml="6px"
-                  mb="2px"
+                  ml="8px"
+                  mb="6px"
                   color={theme.colors.grey[500]}
                 />
               </Tooltip>
@@ -132,7 +133,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
         <Heading as="h3" fontSize="4xl" fontWeight="medium">
           Popular destinations
         </Heading>
-        <SimpleGrid spacing="50px" columns={4} mt="45px">
+        <SimpleGrid spacing="48px 45px" columns={4} mt="45px">
           {cities.map(city => (
             <Box
               key={city.name}
@@ -140,10 +141,10 @@ export default function Continent({ continent, cities }: ContinentProps) {
               overflow="hidden"
               bgColor={theme.colors.white}
             >
-              <Flex h="160px" align="center" justify="center" overflow="hidden">
-                <Image src={city.image} w="130%" />
+              <Flex h="173px" align="center" justify="center" overflow="hidden">
+                <Image src={city.image} maxW="130%" />
               </Flex>
-              <Flex p={5} justify="space-between" align="center">
+              <Flex p="6" justify="space-between" align="center">
                 <Box>
                   <Text
                     textTransform="capitalize"

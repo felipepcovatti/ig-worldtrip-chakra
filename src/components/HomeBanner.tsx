@@ -14,11 +14,11 @@ export function HomeBanner() {
       <Flex
         mx="auto"
         maxW="1160"
-        height="360px"
+        height="335px"
         align="center"
         justify="space-between"
       >
-        <Box maxW="400px">
+        <Box maxW="500px">
           <Text
             fontSize="4xl"
             color={theme.colors.grey[100]}

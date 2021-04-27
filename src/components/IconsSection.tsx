@@ -10,7 +10,7 @@ export function IconsSection() {
       <Flex
         maxW="1160"
         mx="auto"
-        mt={20}
+        mt="114px"
         justify="space-around"
       >
         {Array.from(Array(5).keys(), key => (

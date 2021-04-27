@@ -13,7 +13,7 @@ export function Header() {
         as="header"
         align="center"
         justify="center"
-        h="96px"
+        h="100px"
         maxW="1160"
         mx="auto"
         pos="relative"
