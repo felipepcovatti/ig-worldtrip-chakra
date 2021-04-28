@@ -21,6 +21,7 @@ export function HomeBanner() {
         minHeight={{ base: '163px', lg: '335px' }}
         align="center"
         justify="space-between"
+        py="3"
       >
         <Box maxW={{ lg: '500px' }}>
           <Text
