@@ -26,7 +26,9 @@ export function Header() {
             bg="transparent"
             _hover={{ bg: 'transparent' }}
             onClick={() => back()}
-            icon={<Icon as={FiChevronLeft} fontSize="xx-large" />}
+            h={{ base: '4', lg: '8' }}
+            minW={{ base: '4', lg: '8' }}
+            icon={<Icon as={FiChevronLeft} fontSize={{ lg: "xx-large" }} />}
           />
         )}
         <Link href="/">
