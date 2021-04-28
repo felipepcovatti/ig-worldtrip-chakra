@@ -155,7 +155,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
             gridTemplateColumns={{ base: '16rem', md: 'repeat(auto-fit, minmax(16rem, 1fr))' }}
             spacingX={{ base: 5, lg: '45px' }}
             spacingY={{ base: 5, lg: 12 }}
-            mt={{ base: 7, lg: "45px" }}
+            mt={{ base: 7, lg: '45px' }}
             justifyContent="center"
           >
             {cities.map(city => (
