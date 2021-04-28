@@ -9,7 +9,7 @@ export function HomeBanner() {
   return (
     <Box
       bgImg="url(/images/home-banner.jpeg)"
-      px="3"
+      px="4"
     >
       <Flex
         mx="auto"

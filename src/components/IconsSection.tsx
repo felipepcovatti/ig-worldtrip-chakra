@@ -6,7 +6,7 @@ export function IconsSection() {
   faker.seed(32)
 
   return (
-    <Box px="3">
+    <Box px="4">
       <Flex
         maxW="1160"
         mx="auto"

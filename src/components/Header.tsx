@@ -8,7 +8,7 @@ export function Header() {
   const { asPath, back } = useRouter()
 
   return (
-    <Box px="3">
+    <Box px="4">
       <Flex
         as="header"
         align="center"
