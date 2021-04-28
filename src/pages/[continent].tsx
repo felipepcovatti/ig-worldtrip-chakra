@@ -45,7 +45,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
 
       <Flex
         align="center"
-        height={{ base: '150px', lg: '450px' }}
+        height={{ base: '150px', lg: '500px' }}
         overflow="hidden"
         justify="center"
       >
