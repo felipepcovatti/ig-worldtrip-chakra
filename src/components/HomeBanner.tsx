@@ -18,19 +18,23 @@ export function HomeBanner() {
       <Flex
         mx="auto"
         maxW="1160"
-        height="335px"
+        minHeight={{ base: '163px', lg: '335px' }}
         align="center"
         justify="space-between"
       >
-        <Box maxW="500px">
+        <Box maxW={{ lg: '500px' }}>
           <Text
-            fontSize="4xl"
+            fontSize={{ base: 'xl', lg: '4xl' }}
             color={theme.colors.grey[100]}
             fontWeight="medium"
           >
             {faker.lorem.sentence(4)}
           </Text>
-          <Text mt="4" fontSize="xl" color={theme.colors.grey[300]}>
+          <Text
+            mt="4"
+            fontSize={{ base: 'sm', lg: 'xl' }}
+            color={theme.colors.grey[300]}
+          >
             {faker.lorem.sentence(12)}
           </Text>
         </Box>

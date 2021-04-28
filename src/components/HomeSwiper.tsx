@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import Link from 'next/link'
 
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
@@ -20,11 +20,15 @@ interface HomeSwiperProps {
 }
 
 export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
+  const isLargeScreen = useBreakpointValue({
+    base: false,
+    lg: true
+  })
 
   faker.seed(40)
 
   return (
-    <Box px="4">
+    <Box px={{ lg: "4" }}>
       <Box
         maxW="1160"
         mx="auto"
@@ -35,7 +39,7 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
           pagination={{ clickable: true }}
         >
           {continents.map(continent => (
-            <SwiperSlide key={continent.id} style={{ height: 450 }}>
+            <SwiperSlide key={continent.id} style={{ height: isLargeScreen ? 450 : 250 }}>
               <Image
                 src={continent.image}
                 style={{
@@ -51,7 +55,7 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                 <Link href={`/${continent.id}`}>
                   <a>
                     <Text
-                      fontSize="5xl"
+                      fontSize={{ base: 'x-large', lg: '5xl' }}
                       fontWeight="bold"
                       textTransform="capitalize"
                       color={theme.colors.grey[100]}
@@ -59,7 +63,7 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                       {continent.name}
                     </Text>
                     <Text
-                      fontSize="x-large"
+                      fontSize={{ base: 'sm', lg: 'x-large' }}
                       fontWeight="bold"
                       color={theme.colors.grey[300]}
                     >

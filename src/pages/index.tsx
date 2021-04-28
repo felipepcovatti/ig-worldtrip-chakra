@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Divider, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { HomeBanner } from '../components/HomeBanner'
@@ -23,7 +23,7 @@ export default function Home({ continents }: HomeProps) {
   faker.seed(8)
 
   return (
-    <Box mb="75px">
+    <Box mb={{ base: '8', lg: '75px' }}>
       <Head>
         <title>Wordtrip | Home</title>
       </Head>
@@ -34,18 +34,20 @@ export default function Home({ continents }: HomeProps) {
 
       <IconsSection />
 
-      <hr style={{
-        width: 100,
-        margin: "75px auto",
-        borderWidth: 1,
-        borderColor: theme.colors.grey[700]
-      }} />
+      <Divider
+        w={{ base: '60px', lg: '100px' }}
+        my={{ base: '8', lg: '75px' }}
+        mx="auto"
+        borderWidth="1px"
+        opacity="1"
+        borderColor={theme.colors.grey[700]}
+      />
 
       <Text
         textAlign="center"
-        fontSize="4xl"
+        fontSize={{ base: 'xl', lg: '4xl' }}
         fontWeight="medium"
-        mb="75px"
+        mb={{ base: '5', lg: '75px' }}
       >
         {faker.lorem.sentence(2).replace('.', '?')} <br />
         {faker.lorem.sentence(5).replace('.', '')}
