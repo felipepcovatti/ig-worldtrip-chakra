@@ -23,7 +23,7 @@ export default function Home({ continents }: HomeProps) {
   faker.seed(8)
 
   return (
-    <Box mb={{ base: '8', lg: '75px' }}>
+    <Box mb={{ base: 8, lg: '75px' }}>
       <Head>
         <title>Wordtrip | Home</title>
       </Head>
@@ -36,7 +36,7 @@ export default function Home({ continents }: HomeProps) {
 
       <Divider
         w={{ base: '60px', lg: '90px' }}
-        my={{ base: '8', lg: '75px' }}
+        my={{ base: 8, lg: '75px' }}
         mx="auto"
         borderWidth="1px"
         opacity="1"
@@ -47,7 +47,7 @@ export default function Home({ continents }: HomeProps) {
         textAlign="center"
         fontSize={{ base: 'xl', lg: '4xl' }}
         fontWeight="medium"
-        mb={{ base: '5', lg: '75px' }}
+        mb={{ base: 5, lg: '75px' }}
       >
         {faker.lorem.sentence(2).replace('.', '?')} <br />
         {faker.lorem.sentence(5).replace('.', '')}

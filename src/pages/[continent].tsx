@@ -36,7 +36,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
   faker.seed(16)
 
   return (
-    <Box mb={{ base: '8', lg: '75px' }}>
+    <Box mb={{ base: 8, lg: '75px' }}>
       <Head>
         <title>Wordtrip | {continent.name}</title>
       </Head>
@@ -70,7 +70,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
         <Box
           mx="auto"
           maxW="1160"
-          pt={{ base: '6', lg: '75px' }}
+          pt={{ base: 6, lg: '75px' }}
         >
           {isLargeScreen && (
             <Heading
@@ -82,7 +82,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
               {continent.name}
             </Heading>
           )}
-          <SimpleGrid spacing="24px" columns={{ lg: 2 }} mb={{ base: '6', lg: '75px' }}>
+          <SimpleGrid spacing="24px" columns={{ lg: 2 }} mb={{ base: 6, lg: '75px' }}>
             <Text fontSize={{ base: 'sm', lg: 'x-large' }}>
               {faker.lorem.lines(8)}
             </Text>
@@ -153,9 +153,9 @@ export default function Continent({ continent, cities }: ContinentProps) {
           </Heading>
           <SimpleGrid
             gridTemplateColumns={{ base: '16rem', md: 'repeat(auto-fit, minmax(16rem, 1fr))' }}
-            spacingX={{ base: '5', lg: '45px' }}
-            spacingY={{ base: '5', lg: '12' }}
-            mt={{ base: '7', lg: "45px" }}
+            spacingX={{ base: 5, lg: '45px' }}
+            spacingY={{ base: 5, lg: 12 }}
+            mt={{ base: 7, lg: "45px" }}
             justifyContent="center"
           >
             {cities.map(city => (

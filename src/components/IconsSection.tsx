@@ -16,7 +16,7 @@ export function IconsSection() {
       <Flex
         maxW="1160"
         mx="auto"
-        mt={{ base: '8', lg: '114px' }}
+        mt={{ base: 8, lg: '114px' }}
         justify="space-around"
         wrap="wrap"
       >

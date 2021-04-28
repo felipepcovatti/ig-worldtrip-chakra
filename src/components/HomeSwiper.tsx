@@ -28,7 +28,7 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
   faker.seed(40)
 
   return (
-    <Box px={{ lg: "4" }}>
+    <Box px={{ lg: 4 }}>
       <Box
         maxW="1160"
         mx="auto"
