@@ -13,7 +13,7 @@ export function Header() {
         as="header"
         align="center"
         justify="center"
-        h="100px"
+        h={{ base: '50px', lg: '100px' }}
         maxW="1160"
         mx="auto"
         pos="relative"
@@ -31,7 +31,11 @@ export function Header() {
         )}
         <Link href="/">
           <a>
-            <Image src="images/Logo.svg" alt="Worldtrip logo"></Image>
+            <Image
+              src="images/Logo.svg"
+              alt="Worldtrip logo"
+              w={{ base: '81px', lg: 'auto' }}
+            ></Image>
           </a>
         </Link>
       </Flex>
