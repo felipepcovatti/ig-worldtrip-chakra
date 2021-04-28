@@ -35,7 +35,7 @@ export default function Home({ continents }: HomeProps) {
       <IconsSection />
 
       <Divider
-        w={{ base: '60px', lg: '100px' }}
+        w={{ base: '60px', lg: '90px' }}
         my={{ base: '8', lg: '75px' }}
         mx="auto"
         borderWidth="1px"
