@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Icon, Image, SimpleGrid, Text, Tooltip, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, Image, SimpleGrid, Text, useBreakpointValue, Popover, PopoverTrigger, PopoverContent, PopoverBody } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
@@ -138,13 +138,26 @@ export default function Continent({ continent, cities }: ContinentProps) {
                 >
                   {faker.lorem.word(5)}
                 </Text>
-                <Tooltip label={faker.lorem.sentence(5)}>
-                  <InfoOutlineIcon
-                    ml="8px"
-                    mb="6px"
-                    color={theme.colors.grey[500]}
-                  />
-                </Tooltip>
+                <Popover trigger={isLargeScreen ? 'hover' : 'click'}>
+                  <PopoverTrigger>
+                    <InfoOutlineIcon
+                      aria-label="More information"
+                      ml={{ base: '6px', lg: '8px' }}
+                      mb={{ base: '2px', lg: '6px' }}
+                      color={theme.colors.grey[500]}
+                      fontSize={{ base: 'sm', lg: 'md' }}
+                      opacity="0.5"
+                    />
+                  </PopoverTrigger>
+                  <PopoverContent
+                    bgColor={theme.colors.gray[700]}
+                    color={theme.colors.gray[100]}
+                  >
+                    <PopoverBody>
+                      {faker.lorem.sentence(5)}
+                    </PopoverBody>
+                  </PopoverContent>
+                </Popover>
               </Box>
             </Flex>
           </SimpleGrid>
