@@ -30,7 +30,7 @@ export function HomeBanner() {
             {faker.lorem.sentence(12)}
           </Text>
         </Box>
-          <Image src="/images/Airplane.svg" position="relative" top="70px" />
+          <Image src="/images/Airplane.svg" position="relative" top="14" />
       </Flex>
     </Box>
   )
