@@ -174,7 +174,7 @@ export default function Continent({ continent, cities }: ContinentProps) {
                       textTransform="capitalize"
                       fontWeight="semibold"
                       fontSize="xl"
-                      mb={2}
+                      mb="2"
                       fontFamily={theme.fonts.alternative}
                     >
                       {city.name}
