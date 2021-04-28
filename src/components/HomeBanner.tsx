@@ -1,8 +1,12 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { theme } from "../styles/theme";
 import faker from 'faker'
 
 export function HomeBanner() {
+  const isLargeScreen = useBreakpointValue({
+    base: false,
+    lg: true
+  })
 
   faker.seed(24)
 
@@ -30,7 +34,9 @@ export function HomeBanner() {
             {faker.lorem.sentence(12)}
           </Text>
         </Box>
+        {isLargeScreen && (
           <Image src="/images/Airplane.svg" position="relative" top="14" />
+        )}
       </Flex>
     </Box>
   )
