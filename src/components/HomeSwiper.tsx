@@ -50,7 +50,6 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
                   src={continent.image}
                   layout="fill"
                   objectFit="cover"
-                  priority
                 />
               </Box>
               <Flex
