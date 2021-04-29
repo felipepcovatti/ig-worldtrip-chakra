@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
+import NextImage from 'next/image'
 import Link from 'next/link'
 
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
@@ -39,13 +40,19 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
           pagination={{ clickable: true }}
         >
           {continents.map(continent => (
-            <SwiperSlide key={continent.id} style={{ height: isLargeScreen ? 450 : 250 }}>
-              <Image
-                src={continent.image}
-                style={{
-                  filter: "brightness(0.4)"
-                }}
-              />
+            <SwiperSlide key={continent.id}>
+              <Box
+                height={isLargeScreen ? 450 : 250}
+                width="100%"
+                filter="brightness(0.4)"
+              >
+                <NextImage
+                  src={continent.image}
+                  layout="fill"
+                  objectFit="cover"
+                  priority
+                />
+              </Box>
               <Flex
                 pos="absolute"
                 textAlign="center"
@@ -76,6 +83,6 @@ export function HomeSwiper({ slides: continents }: HomeSwiperProps) {
           ))}
         </Swiper>
       </Box>
-    </Box>
+    </Box >
   )
 }
