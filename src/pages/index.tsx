@@ -43,15 +43,17 @@ export default function Home({ continents }: HomeProps) {
         borderColor={theme.colors.grey[700]}
       />
 
-      <Text
-        textAlign="center"
-        fontSize={{ base: 'xl', lg: '4xl' }}
-        fontWeight="medium"
-        mb={{ base: 5, lg: '75px' }}
-      >
-        {faker.lorem.sentence(2).replace('.', '?')} <br />
-        {faker.lorem.sentence(5).replace('.', '')}
-      </Text>
+      <Box px="4">
+        <Text
+          textAlign="center"
+          fontSize={{ base: 'xl', lg: '4xl' }}
+          fontWeight="medium"
+          mb={{ base: 5, lg: '75px' }}
+        >
+          {faker.lorem.sentence(2).replace('.', '?')} <br />
+          {faker.lorem.sentence(5).replace('.', '')}
+        </Text>
+      </Box>
 
       <HomeSwiper slides={continents} />
     </Box>
