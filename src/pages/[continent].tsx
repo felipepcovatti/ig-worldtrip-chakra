@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Icon, Image, SimpleGrid, Text, useBreakpointValue } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
+import NextImage from 'next/image';
 import { Header } from "../components/Header";
 import { theme } from "../styles/theme";
 import Flags from 'country-flag-icons/react/1x1'
@@ -44,16 +45,14 @@ export default function Continent({ continent, cities }: ContinentProps) {
       <Header />
 
       <Flex
-        align="center"
         height={{ base: '150px', lg: '500px' }}
-        overflow="hidden"
-        justify="center"
+        filter="brightness(0.4)"
       >
-        <Image
+        <NextImage
           src={continent.image}
-          style={{
-            filter: "brightness(0.4)"
-          }}
+          layout="fill"
+          objectFit="cover"
+          priority
         />
         {!isLargeScreen && (
           <Heading
