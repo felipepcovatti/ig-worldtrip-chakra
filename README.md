@@ -5,7 +5,7 @@
 </p>
 A travel guide site created from a Figma layout provided in a online coding course (from rocketseat.com.br), as a complementary part of the React track.
 
-Besides React, tt uses the Next.js framework, the Chakra UI component library, and the Swiper slider package.
+Besides React, it uses the Next.js framework, the Chakra UI component library, and the Swiper slider package.
 <p>
   <a href="https://fpc-worldtrip.vercel.app/">
     <h2>Live</h2>
