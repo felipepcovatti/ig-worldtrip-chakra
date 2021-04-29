@@ -1,126 +1,126 @@
 {
-  "continents": [
-    {
-      "id": "europe",
-      "name": "Europe",
-      "image": "images/continents/europe.jpg"
-    },
-    {
-      "id": "north-america",
-      "name": "North America",
-      "image": "images/continents/north-america.jpg"
-    },
-    {
-      "id": "south-america",
-      "name": "South America",
-      "image": "images/continents/south-america.jpg"
-    }
-  ],
   "cities": [
     {
-      "name": "Budapest",
+      "continent_id": "europe",
       "country": "Hungary",
       "country_code": "HU",
       "image": "images/cities/budapest.jpg",
-      "continent_id": "europe"
+      "name": "Budapest"
     },
     {
-      "name": "London",
+      "continent_id": "europe",
       "country": "United Kingdon",
       "country_code": "GB",
       "image": "images/cities/london.jpg",
-      "continent_id": "europe"
+      "name": "London"
     },
     {
-      "name": "Rome",
+      "continent_id": "europe",
       "country": "Italy",
       "country_code": "IT",
       "image": "images/cities/rome.jpg",
-      "continent_id": "europe"
+      "name": "Rome"
     },
     {
-      "name": "Barcelona",
+      "continent_id": "europe",
       "country": "Spain",
       "country_code": "ES",
       "image": "images/cities/barcelona.jpg",
-      "continent_id": "europe"
+      "name": "Barcelona"
     },
     {
-      "name": "Kraków",
+      "continent_id": "europe",
       "country": "Poland",
       "country_code": "PL",
       "image": "images/cities/krakow.jpg",
-      "continent_id": "europe"
+      "name": "Kraków"
     },
     {
-      "name": "Miami",
+      "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
       "image": "images/cities/miami.jpg",
-      "continent_id": "north-america"
+      "name": "Miami"
     },
     {
-      "name": "Los Angeles",
+      "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
       "image": "images/cities/los-angeles.jpg",
-      "continent_id": "north-america"
+      "name": "Los Angeles"
     },
     {
-      "name": "New York",
+      "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
       "image": "images/cities/new-york.jpg",
-      "continent_id": "north-america"
+      "name": "New York"
     },
     {
-      "name": "Las Vegas",
+      "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
       "image": "images/cities/las-vegas.jpg",
-      "continent_id": "north-america"
+      "name": "Las Vegas"
     },
     {
-      "name": "Cancún",
+      "continent_id": "north-america",
       "country": "Mexico",
       "country_code": "MX",
       "image": "images/cities/cancun.jpg",
-      "continent_id": "north-america"
+      "name": "Cancún"
     },
     {
-      "name": "Rio de Janeiro",
+      "continent_id": "south-america",
       "country": "Brazil",
       "country_code": "BR",
       "image": "images/cities/rio-de-janeiro.jpg",
-      "continent_id": "south-america"
+      "name": "Rio de Janeiro"
     },
     {
-      "name": "São Paulo",
+      "continent_id": "south-america",
       "country": "Brazil",
       "country_code": "BR",
       "image": "images/cities/sao-paulo.jpg",
-      "continent_id": "south-america"
+      "name": "São Paulo"
     },
     {
-      "name": "Cusco",
+      "continent_id": "south-america",
       "country": "Peru",
       "country_code": "PE",
       "image": "images/cities/cusco.jpg",
-      "continent_id": "south-america"
+      "name": "Cusco"
     },
     {
-      "name": "Buenos Aires",
+      "continent_id": "south-america",
       "country": "Argentina",
       "country_code": "AR",
       "image": "images/cities/buenos-aires.jpg",
-      "continent_id": "south-america"
+      "name": "Buenos Aires"
     },
     {
-      "name": "Quito",
+      "continent_id": "south-america",
       "country": "Ecuador",
       "country_code": "EC",
       "image": "images/cities/quito.jpg",
-      "continent_id": "south-america"
+      "name": "Quito"
+    }
+  ],
+  "continents": [
+    {
+      "id": "europe",
+      "image": "images/continents/europe.jpg",
+      "name": "Europeee"
+    },
+    {
+      "id": "north-america",
+      "image": "images/continents/north-america.jpg",
+      "name": "North America"
+    },
+    {
+      "id": "south-america",
+      "image": "images/continents/south-america.jpg",
+      "name": "South America"
     }
   ]
 }

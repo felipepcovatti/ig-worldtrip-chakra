@@ -206,7 +206,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { continent: id } = params
   const { data: continent } = await api.get<Continent>(`continents/${id}`)
-  const { data: cities } = await api.get<City[]>(`cities`, { params: { continent_id: id } })
+  const { data: cities } = await api.get<City[]>('cities', { params: { continent_id: id } })
 
   return {
     props: {
