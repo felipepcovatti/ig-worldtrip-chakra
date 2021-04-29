@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
+import NextImage from 'next/image';
 import { theme } from "../styles/theme";
 import faker from 'faker'
 
@@ -40,7 +41,9 @@ export function HomeBanner() {
           </Text>
         </Box>
         {isLargeScreen && (
-          <Image src="/images/Airplane.svg" position="relative" top="14" />
+          <Box position="relative" top="14" >
+            <NextImage src="/images/Airplane.svg" height={293} width={431} />
+          </Box>
         )}
       </Flex>
     </Box>

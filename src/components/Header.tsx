@@ -1,4 +1,5 @@
-import { Box, Flex, Image, IconButton, Icon } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Icon } from "@chakra-ui/react";
+import NextImage from 'next/image'
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import { FiChevronLeft } from 'react-icons/fi'
@@ -30,16 +31,23 @@ export function Header() {
             icon={<Icon as={FiChevronLeft} fontSize={{ lg: "xx-large" }} />}
           />
         )}
-        <Link href="/">
-          <a>
-            <Image
-              src="images/Logo.svg"
+
+        <Link href="/" passHref>
+          <Box
+            width={{ base: '81px', lg: '185px' }}
+            height={{ base: '20px', lg: '46px' }}
+            as="a"
+          >
+            <NextImage
+              src="/images/Logo.svg"
               alt="Worldtrip logo"
-              w={{ base: '81px', lg: 'auto' }}
-            ></Image>
-          </a>
+              width={185}
+              height={46}
+              priority={true}
+            />
+          </Box>
         </Link>
       </Flex>
-    </Box>
+    </Box >
   )
 }
