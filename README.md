@@ -3,7 +3,7 @@
     <h1 align="center">Worldtrip</h1>
   </a>
 </p>
-A travel guide site created from a Figma layout provided in a online coding course (from rocketseat.com.br), as a complementary part of the React track.
+A travel guide site created from a Figma layout provided in an online coding course (from rocketseat.com.br), as a complementary part of the React track.
 
 Besides React, it uses the Next.js framework, the Chakra UI component library, and the Swiper slider package.
 <p>
