@@ -42,7 +42,12 @@ export function HomeBanner() {
         </Box>
         {isLargeScreen && (
           <Box position="relative" top="14" >
-            <NextImage src="/images/Airplane.svg" height={293} width={431} />
+            <NextImage
+              src="/images/Airplane.svg"
+              width={431}
+              height={293}
+              priority
+            />
           </Box>
         )}
       </Flex>
