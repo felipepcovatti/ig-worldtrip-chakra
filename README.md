@@ -12,5 +12,3 @@ Besides React, it uses the Next.js framework, the Chakra UI component library, a
     <h2>Live</h2>
   </a>
 </p>
-  
-<img src="https://firebasestorage.googleapis.com/v0/b/featured-projects.appspot.com/o/images%2Fworldtrip.png?alt=media&amp;token=f7ae01cc-33b2-4375-bf01-   34dcca90df4e" alt="Screenshot of the Travel Guide Site" width="400px">
