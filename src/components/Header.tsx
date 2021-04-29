@@ -43,7 +43,7 @@ export function Header() {
               alt="Worldtrip logo"
               width={185}
               height={46}
-              priority={true}
+              priority
             />
           </Box>
         </Link>
