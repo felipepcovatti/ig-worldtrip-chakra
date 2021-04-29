@@ -3,7 +3,6 @@ import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import { FiChevronLeft } from 'react-icons/fi'
 
-
 export function Header() {
   const { asPath, back } = useRouter()
 

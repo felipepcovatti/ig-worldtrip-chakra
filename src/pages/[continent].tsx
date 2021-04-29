@@ -44,16 +44,19 @@ export default function Continent({ continent, cities }: ContinentProps) {
 
       <Header />
 
-      <Flex
-        height={{ base: '150px', lg: '500px' }}
-        filter="brightness(0.4)"
-      >
-        <NextImage
-          src={continent.image}
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
+      <Flex align="center" justify="center">
+        <Box
+          width="100%"
+          height={{ base: '150px', lg: '500px' }}
+          filter="brightness(0.4)"
+        >
+          <NextImage
+            src={continent.image}
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </Box>
         {!isLargeScreen && (
           <Heading
             fontSize="3xl"
