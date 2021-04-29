@@ -2,11 +2,11 @@ import { Box, Flex, Heading, Icon, Image, SimpleGrid, Text, useBreakpointValue }
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
-import { api } from "../services/api";
 import { theme } from "../styles/theme";
 import Flags from 'country-flag-icons/react/1x1'
 import faker from 'faker'
 import { InfoTooltip } from "../components/InfoTooltip";
+import { loadData } from "../services/loadData";
 
 type Continent = {
   id: number;
@@ -198,15 +198,19 @@ export default function Continent({ continent, cities }: ContinentProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths: [{
+      params: {
+        continent: 'europe'
+      }
+    }],
     fallback: 'blocking'
   }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { continent: id } = params
-  const { data: continent } = await api.get<Continent>(`continents/${id}`)
-  const { data: cities } = await api.get<City[]>('cities', { params: { continent_id: id } })
+  const id = String(params.continent)
+  const { data: continent } = loadData<Continent>('continents').id(id)
+  const { data: cities } = loadData<City>('cities').query({ continent_id: id })
 
   return {
     props: {

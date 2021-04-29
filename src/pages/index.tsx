@@ -7,7 +7,7 @@ import { theme } from '../styles/theme'
 import faker from 'faker'
 import { HomeSwiper } from '../components/HomeSwiper'
 import { GetStaticProps } from 'next'
-import { api } from '../services/api'
+import { loadData } from '../services/loadData'
 
 type Continent = {
   id: string;
@@ -59,7 +59,7 @@ export default function Home({ continents }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data: continents } = await api.get('continents')
+  const { data: continents } = loadData<Continent>('continents')
 
   return {
     props: {
