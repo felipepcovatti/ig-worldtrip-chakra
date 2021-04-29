@@ -4,122 +4,122 @@
       "continent_id": "europe",
       "country": "Hungary",
       "country_code": "HU",
-      "image": "images/cities/budapest.jpg",
+      "image": "/images/cities/budapest.jpg",
       "name": "Budapest"
     },
     {
       "continent_id": "europe",
       "country": "United Kingdon",
       "country_code": "GB",
-      "image": "images/cities/london.jpg",
+      "image": "/images/cities/london.jpg",
       "name": "London"
     },
     {
       "continent_id": "europe",
       "country": "Italy",
       "country_code": "IT",
-      "image": "images/cities/rome.jpg",
+      "image": "/images/cities/rome.jpg",
       "name": "Rome"
     },
     {
       "continent_id": "europe",
       "country": "Spain",
       "country_code": "ES",
-      "image": "images/cities/barcelona.jpg",
+      "image": "/images/cities/barcelona.jpg",
       "name": "Barcelona"
     },
     {
       "continent_id": "europe",
       "country": "Poland",
       "country_code": "PL",
-      "image": "images/cities/krakow.jpg",
+      "image": "/images/cities/krakow.jpg",
       "name": "Kraków"
     },
     {
       "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
-      "image": "images/cities/miami.jpg",
+      "image": "/images/cities/miami.jpg",
       "name": "Miami"
     },
     {
       "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
-      "image": "images/cities/los-angeles.jpg",
+      "image": "/images/cities/los-angeles.jpg",
       "name": "Los Angeles"
     },
     {
       "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
-      "image": "images/cities/new-york.jpg",
+      "image": "/images/cities/new-york.jpg",
       "name": "New York"
     },
     {
       "continent_id": "north-america",
       "country": "United States",
       "country_code": "US",
-      "image": "images/cities/las-vegas.jpg",
+      "image": "/images/cities/las-vegas.jpg",
       "name": "Las Vegas"
     },
     {
       "continent_id": "north-america",
       "country": "Mexico",
       "country_code": "MX",
-      "image": "images/cities/cancun.jpg",
+      "image": "/images/cities/cancun.jpg",
       "name": "Cancún"
     },
     {
       "continent_id": "south-america",
       "country": "Brazil",
       "country_code": "BR",
-      "image": "images/cities/rio-de-janeiro.jpg",
+      "image": "/images/cities/rio-de-janeiro.jpg",
       "name": "Rio de Janeiro"
     },
     {
       "continent_id": "south-america",
       "country": "Brazil",
       "country_code": "BR",
-      "image": "images/cities/sao-paulo.jpg",
+      "image": "/images/cities/sao-paulo.jpg",
       "name": "São Paulo"
     },
     {
       "continent_id": "south-america",
       "country": "Peru",
       "country_code": "PE",
-      "image": "images/cities/cusco.jpg",
+      "image": "/images/cities/cusco.jpg",
       "name": "Cusco"
     },
     {
       "continent_id": "south-america",
       "country": "Argentina",
       "country_code": "AR",
-      "image": "images/cities/buenos-aires.jpg",
+      "image": "/images/cities/buenos-aires.jpg",
       "name": "Buenos Aires"
     },
     {
       "continent_id": "south-america",
       "country": "Ecuador",
       "country_code": "EC",
-      "image": "images/cities/quito.jpg",
+      "image": "/images/cities/quito.jpg",
       "name": "Quito"
     }
   ],
   "continents": [
     {
       "id": "europe",
-      "image": "images/continents/europe.jpg",
+      "image": "/images/continents/europe.jpg",
       "name": "Europe"
     },
     {
       "id": "north-america",
-      "image": "images/continents/north-america.jpg",
+      "image": "/images/continents/north-america.jpg",
       "name": "North America"
     },
     {
       "id": "south-america",
-      "image": "images/continents/south-america.jpg",
+      "image": "/images/continents/south-america.jpg",
       "name": "South America"
     }
   ]
